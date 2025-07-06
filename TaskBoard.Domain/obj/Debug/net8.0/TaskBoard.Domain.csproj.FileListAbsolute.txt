@@ -1,0 +1,12 @@
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\bin\Debug\net8.0\TaskBoard.Domain.deps.json
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\bin\Debug\net8.0\TaskBoard.Domain.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\bin\Debug\net8.0\TaskBoard.Domain.pdb
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.AssemblyInfoInputs.cache
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.AssemblyInfo.cs
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.csproj.CoreCompileInputs.cache
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.sourcelink.json
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\refint\TaskBoard.Domain.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\TaskBoard.Domain.pdb
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Domain\obj\Debug\net8.0\ref\TaskBoard.Domain.dll

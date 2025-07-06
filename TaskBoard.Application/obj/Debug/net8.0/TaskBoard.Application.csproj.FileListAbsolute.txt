@@ -1,0 +1,16 @@
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\bin\Debug\net8.0\TaskBoard.Application.deps.json
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\bin\Debug\net8.0\TaskBoard.Application.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\bin\Debug\net8.0\TaskBoard.Application.pdb
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\bin\Debug\net8.0\TaskBoard.Domain.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\bin\Debug\net8.0\TaskBoard.Domain.pdb
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.csproj.AssemblyReference.cache
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.AssemblyInfoInputs.cache
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.AssemblyInfo.cs
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.csproj.CoreCompileInputs.cache
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.sourcelink.json
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoar.1B47CDC4.Up2Date
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\refint\TaskBoard.Application.dll
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\TaskBoard.Application.pdb
+C:\Users\filip\Desktop\TaskBoard\TaskBoard.Application\obj\Debug\net8.0\ref\TaskBoard.Application.dll
