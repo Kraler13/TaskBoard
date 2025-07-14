@@ -18,17 +18,22 @@ namespace TaskBoard.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Column> Create([FromBody] CreateColumnDto dto)
+        public ActionResult Create([FromBody] CreateColumnDto dto)
         {
             var project = _dbContext.Projects.Find(dto.ProjectId);
             if (project == null)
-                return NotFound($"Project with ID {dto.ProjectId} not found");
+                return NotFound();
+
+            var maxOrder = _dbContext.Columns
+    .Where(c => c.ProjectId == dto.ProjectId)
+    .Select(c => (int?)c.Order)
+    .Max() ?? -1;
 
             var column = new Column
             {
                 Id = Guid.NewGuid(),
                 Name = dto.Name,
-                Order = dto.Order,
+                Order = maxOrder + 1,
                 ProjectId = dto.ProjectId,
                 Project = project
             };
@@ -36,7 +41,7 @@ namespace TaskBoard.Controllers
             _dbContext.Columns.Add(column);
             _dbContext.SaveChanges();
 
-            return CreatedAtAction(nameof(GetByProject), new { projectId = column.ProjectId }, column);
+            return CreatedAtAction(nameof(Get), new { id = column.Id }, column);
         }
 
         [HttpGet("/api/projects/{projectId}/columns")]
@@ -78,6 +83,16 @@ namespace TaskBoard.Controllers
             _dbContext.SaveChanges();
 
             return NoContent();
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Column> Get(Guid id)
+        {
+            var column = _dbContext.Columns.FirstOrDefault(c => c.Id == id);
+            if (column == null)
+                return NotFound();
+
+            return Ok(column);
         }
     }
 }

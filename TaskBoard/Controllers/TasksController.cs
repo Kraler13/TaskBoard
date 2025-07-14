@@ -37,7 +37,7 @@ namespace TaskBoard.Controllers
             _dbContext.Tasks.Add(task);
             _dbContext.SaveChanges();
 
-            return CreatedAtAction(nameof(GetByColumn), new { columnId = task.ColumnId }, task);
+            return CreatedAtAction(nameof(Get), new { id = task.Id }, task);
         }
 
         [HttpGet("/api/columns/{columnId}/tasks")]
@@ -121,6 +121,16 @@ namespace TaskBoard.Controllers
             _dbContext.SaveChanges();
 
             return NoContent();
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<TaskItem> Get(Guid id)
+        {
+            var task = _dbContext.Tasks.FirstOrDefault(t => t.Id == id);
+            if (task == null)
+                return NotFound();
+
+            return Ok(task);
         }
     }
 }

@@ -13,17 +13,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "TaskBoard.Domain.Entities.Column",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TaskBoard.Controllers.TasksController",
@@ -87,6 +77,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard.Controllers.ColumnsController",
+    "Method": "Get",
+    "RelativePath": "api/Columns/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TaskBoard.Domain.Entities.Column",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "TaskBoard.Controllers.ProjectsController",
@@ -275,6 +291,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskBoard.Controllers.TasksController",
+    "Method": "Get",
+    "RelativePath": "api/Tasks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TaskBoard.Domain.Entities.TaskItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "TaskBoard.Controllers.TasksController",
