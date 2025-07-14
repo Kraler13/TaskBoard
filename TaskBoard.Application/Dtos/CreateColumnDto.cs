@@ -1,4 +1,4 @@
-﻿namespace TaskBoard.Dtos
+﻿namespace TaskBoard.Application.Dtos
 {
     public class CreateColumnDto
     {

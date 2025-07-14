@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskBoard.Domain.Entities;
-using TaskBoard.Dtos;
+using TaskBoard.Application.Dtos;
 using TaskBoard.Infrastructure.Persistence;
 using static TaskBoard.Program;
 namespace TaskBoard.Controllers

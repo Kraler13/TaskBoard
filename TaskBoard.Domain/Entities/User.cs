@@ -13,5 +13,6 @@ namespace TaskBoard.Domain.Entities
         public string PasswordHash { get; set; } = string.Empty;
 
         public ICollection<Project> Projects { get; set; } = new List<Project>();
+
     }
 }

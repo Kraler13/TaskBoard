@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskBoard.Domain.Entities;
-using TaskBoard.Dtos;
+using TaskBoard.Application.Dtos;
 using TaskBoard.Infrastructure.Persistence;
 
 namespace TaskBoard.Controllers
@@ -24,12 +24,18 @@ namespace TaskBoard.Controllers
             if (column == null)
                 return NotFound($"Column with ID {dto.ColumnId} not found");
 
+            var maxOrder = _dbContext.Tasks
+    .Where(t => t.ColumnId == dto.ColumnId)
+    .Select(t => t.Order)
+    .DefaultIfEmpty(-1)
+    .Max();
+
             var task = new TaskItem
             {
                 Id = Guid.NewGuid(),
                 Title = dto.Title,
                 Description = dto.Description,
-                Order = dto.Order,
+                Order = maxOrder + 1,
                 ColumnId = dto.ColumnId,
                 Column = column
             };
